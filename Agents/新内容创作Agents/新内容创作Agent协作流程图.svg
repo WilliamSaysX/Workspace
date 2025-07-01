@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="1600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">新内容创作Agent团队协作流程图 (V11)</text>
+  
+  <!-- 导演 (核心) -->
+  <rect x="450" y="60" width="300" height="60" rx="30" fill="#ff9999" stroke="#333" stroke-width="3"/>
+  <text x="600" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000">导演 (核心创作者)</text>
+  <text x="600" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">流程掌控者 · 创意核心 · 最终决策者</text>
+  
+  <!-- 第一幕：定方向 -->
+  <rect x="450" y="150" width="300" height="50" rx="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">第一幕：定方向</text>
+  <text x="600" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">内容战略Agent</text>
+  
+  <rect x="450" y="220" width="300" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="600" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">内容规划/1_战略规划.md</text>
+  
+  <!-- 第二幕：选剧本 -->
+  <rect x="450" y="290" width="300" height="50" rx="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="600" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">第二幕：选剧本</text>
+  <text x="600" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">智能选题Agent</text>
+  
+  <rect x="450" y="360" width="300" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="600" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">内容规划/2_选题评估报告.md</text>
+  
+  <!-- 第三幕：拍大片 (核心区域) -->
+  <rect x="50" y="440" width="1100" height="650" rx="15" fill="#fff2e6" stroke="#ff6600" stroke-width="3" fill-opacity="0.3"/>
+  <text x="600" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6600">第三幕：拍大片 (创作核心环节)</text>
+  
+  <!-- 剧本接力创作 -->
+  <text x="150" y="500" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">剧本接力创作：</text>
+  
+  <rect x="100" y="520" width="180" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="190" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">3.1 开场设计Agent</text>
+  
+  <rect x="100" y="580" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="190" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">剧本大纲.md (开场)</text>
+  
+  <rect x="320" y="520" width="180" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="410" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">3.2 内容架构Agent</text>
+  
+  <rect x="320" y="580" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="410" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">剧本大纲.md (主体)</text>
+  
+  <rect x="540" y="520" width="180" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="630" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">3.3 转化收尾Agent</text>
+  
+  <rect x="540" y="580" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="630" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">剧本大纲.md (完整)</text>
+  
+  <!-- 录制清单迭代 -->
+  <text x="150" y="670" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">录制清单迭代：</text>
+  
+  <rect x="100" y="690" width="180" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="190" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">3.4 演示清单Agent</text>
+  
+  <rect x="320" y="690" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="410" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">屏幕录制清单.md</text>
+  
+  <rect x="540" y="690" width="150" height="40" rx="8" fill="#ff99ff" stroke="#333" stroke-width="2"/>
+  <text x="615" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">导演审阅反馈</text>
+  
+  <ellipse cx="800" cy="710" rx="60" ry="25" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="800" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">满意?</text>
+  <text x="800" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">是/否</text>
+  
+  <rect x="920" y="690" width="120" height="40" rx="8" fill="#ff99ff" stroke="#333" stroke-width="2"/>
+  <text x="980" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">导演实际录制</text>
+  
+  <!-- 剧本后期同步 -->
+  <text x="150" y="790" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">剧本后期同步：</text>
+  
+  <rect x="100" y="810" width="200" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="200" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">3.2 内容架构Agent (反向修正)</text>
+  
+  <rect x="330" y="810" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="420" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">剧本大纲.md (最终同步)</text>
+  
+  <!-- 最终润色 -->
+  <text x="150" y="890" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">最终润色：</text>
+  
+  <rect x="100" y="910" width="180" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="190" y="935" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">3.5 脚本润色Agent</text>
+  
+  <rect x="320" y="910" width="180" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="410" y="935" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">正式脚本.md</text>
+  
+  <!-- 第四幕：攒物料 -->
+  <rect x="450" y="1120" width="300" height="50" rx="10" fill="#ffcc99" stroke="#333" stroke-width="2"/>
+  <text x="600" y="1140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">第四幕：攒物料</text>
+  <text x="600" y="1158" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">物料制作 (并行)</text>
+  
+  <rect x="200" y="1190" width="150" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="275" y="1215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">4.1 视频配音Agent</text>
+  
+  <rect x="400" y="1190" width="150" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="475" y="1215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">4.2 封面设计Agent</text>
+  
+  <rect x="600" y="1190" width="150" height="40" rx="8" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="675" y="1215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">4.3 元数据Agent</text>
+  
+  <!-- 第五幕：首映礼 -->
+  <rect x="450" y="1260" width="300" height="50" rx="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="600" y="1280" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">第五幕：首映礼</text>
+  <text x="600" y="1298" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">分发推广Agent</text>
+  
+  <rect x="450" y="1330" width="300" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="600" y="1355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">推广/分发策略与文案.md</text>
+  
+  <!-- 第六幕：看票房 -->
+  <rect x="450" y="1400" width="300" height="50" rx="10" fill="#99ccff" stroke="#333" stroke-width="2"/>
+  <text x="600" y="1420" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">第六幕：看票房</text>
+  <text x="600" y="1438" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">数据复盘Agent</text>
+  
+  <rect x="450" y="1470" width="300" height="40" rx="5" fill="#99ff99" stroke="#333" stroke-width="1"/>
+  <text x="600" y="1495" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">复盘报告/数据复盘与洞察.md</text>
+  
+  <!-- 新循环开始 -->
+  <rect x="450" y="1540" width="300" height="40" rx="20" fill="#ff99ff" stroke="#333" stroke-width="2"/>
+  <text x="600" y="1565" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">新循环开始 (闭环)</text>
+  
+  <!-- 箭头连接线 -->
+  <!-- 主流程箭头 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- 垂直流程箭头 -->
+  <line x1="600" y1="120" x2="600" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="200" x2="600" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="260" x2="600" y2="290" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="340" x2="600" y2="360" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="400" x2="600" y2="440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 剧本接力箭头 -->
+  <line x1="280" y1="540" x2="320" y2="540" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="540" x2="540" y2="540" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="630" y1="620" x2="190" y2="690" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 迭代反馈箭头 -->
+  <line x1="280" y1="710" x2="320" y2="710" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="710" x2="540" y2="710" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="710" x2="740" y2="710" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="860" y1="710" x2="920" y2="710" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 反馈循环箭头 -->
+  <path d="M 780 685 Q 750 650 700 650 Q 220 650 190 680" stroke="#ff6600" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="500" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff6600">不满意时的反馈循环</text>
+  
+  <!-- 同步和润色箭头 -->
+  <line x1="980" y1="730" x2="200" y2="810" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="830" x2="330" y2="830" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="420" y1="850" x2="190" y2="910" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="930" x2="320" y2="930" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 物料制作箭头 -->
+  <line x1="500" y1="930" x2="600" y2="1120" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1170" x2="275" y2="1190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1170" x2="475" y2="1190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1170" x2="675" y2="1190" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 分发和复盘箭头 -->
+  <line x1="275" y1="1230" x2="600" y2="1260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="475" y1="1230" x2="600" y2="1260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="675" y1="1230" x2="600" y2="1260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1310" x2="600" y2="1330" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1370" x2="600" y2="1400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1450" x2="600" y2="1470" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="1510" x2="600" y2="1540" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 闭环箭头 -->
+  <path d="M 750 1560 Q 900 1560 900 200 Q 900 170 750 170" stroke="#ff6600" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="950" y="880" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff6600" transform="rotate(90 950 880)">闭环循环</text>
+  
+  <!-- 图例 -->
+  <rect x="20" y="1300" width="200" height="280" rx="10" fill="#f8f9fa" stroke="#333" stroke-width="1"/>
+  <text x="120" y="1320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">图例</text>
+  
+  <rect x="30" y="1330" width="20" height="15" fill="#ff9999" stroke="#333"/>
+  <text x="60" y="1342" font-family="Arial, sans-serif" font-size="11" fill="#333">导演 (决策者)</text>
+  
+  <rect x="30" y="1355" width="20" height="15" fill="#99ccff" stroke="#333"/>
+  <text x="60" y="1367" font-family="Arial, sans-serif" font-size="11" fill="#333">专业Agent</text>
+  
+  <rect x="30" y="1380" width="20" height="15" fill="#99ff99" stroke="#333"/>
+  <text x="60" y="1392" font-family="Arial, sans-serif" font-size="11" fill="#333">文件输出</text>
+  
+  <rect x="30" y="1405" width="20" height="15" fill="#ffcc99" stroke="#333"/>
+  <text x="60" y="1417" font-family="Arial, sans-serif" font-size="11" fill="#333">流程环节</text>
+  
+  <rect x="30" y="1430" width="20" height="15" fill="#ff99ff" stroke="#333"/>
+  <text x="60" y="1442" font-family="Arial, sans-serif" font-size="11" fill="#333">迭代反馈</text>
+  
+  <line x1="30" y1="1460" x2="50" y2="1460" stroke="#ff6600" stroke-width="3"/>
+  <text x="60" y="1465" font-family="Arial, sans-serif" font-size="11" fill="#333">反馈循环</text>
+  
+  <!-- 核心特色标注 -->
+  <text x="820" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff6600">核心特色:</text>
+  <text x="820" y="520" font-family="Arial, sans-serif" font-size="10" fill="#333">• 单一事实来源</text>
+  <text x="820" y="535" font-family="Arial, sans-serif" font-size="10" fill="#333">• 接力式修改</text>
+  <text x="820" y="550" font-family="Arial, sans-serif" font-size="10" fill="#333">• 提取与反馈迭代</text>
+  <text x="820" y="565" font-family="Arial, sans-serif" font-size="10" fill="#333">• 后期同步</text>
+  <text x="820" y="580" font-family="Arial, sans-serif" font-size="10" fill="#333">• 闭环循环</text>
+</svg> 
