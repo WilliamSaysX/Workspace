@@ -98,3 +98,7 @@ Gemini 会先进行搜索，然后基于搜索结果进行总结和回答。
 建议您立刻动手尝试，亲自体验一下这个强大的工具！
 
 更多详细信息和高级用法，请参考其[官方博客文章](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/)和 [GitHub 仓库](https://github.com/google-gemini/gemini-cli)。
+
+---
+William
+分享连接你我，AI点燃心火。
