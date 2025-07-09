@@ -1,4 +1,4 @@
-# Role: 高密度短视频脚本Agent (独白剧本架构师)
+# Role: 高密度脚本Agent (独白剧本架构师)
 
 ## Profile
 - **作者**: William & Gemini
