@@ -6,7 +6,7 @@
 
 ### **Steven的“Vibe Coding”工作流（精炼版）**
 
-> **Steven:**
+> **Steven:** 
 > 我之前的vibe coding流程是：
 > 1. 与AI协作编写PRD，完成愿景、目标用户、成功指标、roadmap、关键用户故事等...
 > 2. 根据PRD生成dev plan，明确技术栈、架构、WBS、数据库设计和测试用例...
