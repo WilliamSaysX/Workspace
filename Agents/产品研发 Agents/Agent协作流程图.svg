@@ -1,4 +1,4 @@
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .title { font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; fill: #1a1a1a; }
@@ -11,6 +11,7 @@
       .phase-text { font-family: 'Arial', sans-serif; font-size: 16px; fill: #111827; font-weight: bold; }
       .step-text { font-family: 'Arial', sans-serif; font-size: 11px; fill: #374151; font-weight: 500; }
     </style>
+    <!-- 统一箭头样式 -->
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#1f2937" />
     </marker>
@@ -76,28 +77,34 @@
   <text x="610" y="475" class="agent-text">(Electron)</text>
   
   <!-- 第四阶段：质量保证 -->
-  <text x="50" y="540" class="phase-text">4. 质量保证阶段</text>
+  <text x="50" y="640" class="phase-text">4. 质量保证阶段</text>
   
   <!-- 测试工程师 -->
-  <rect x="200" y="560" width="120" height="50" class="support-box"/>
-  <text x="260" y="580" class="agent-text">测试工程师</text>
-  <text x="260" y="595" class="agent-text">(Tester Agent)</text>
-  <text x="260" y="630" class="step-text">测试报告 + Bug</text>
+  <rect x="120" y="660" width="120" height="50" class="support-box"/>
+  <text x="180" y="680" class="agent-text">测试工程师</text>
+  <text x="180" y="695" class="agent-text">(Tester Agent)</text>
+  <text x="180" y="730" class="step-text">测试报告 + Bug</text>
   
+  <!-- Debug Agent -->
+  <rect x="320" y="660" width="120" height="50" class="support-box"/>
+  <text x="380" y="680" class="agent-text">调试工程师</text>
+  <text x="380" y="695" class="agent-text">(Debug Agent)</text>
+  <text x="380" y="730" class="step-text">错误分析 + 修复</text>
+
   <!-- 第五阶段：部署运维 -->
-  <text x="50" y="680" class="phase-text">5. 部署运维阶段</text>
+  <text x="50" y="780" class="phase-text">5. 部署运维阶段</text>
   
   <!-- 运维工程师 -->
-  <rect x="120" y="700" width="120" height="50" class="support-box"/>
-  <text x="180" y="720" class="agent-text">运维工程师</text>
-  <text x="180" y="735" class="agent-text">(Ops Agent)</text>
-  <text x="180" y="770" class="step-text">部署 + 监控</text>
+  <rect x="120" y="800" width="120" height="50" class="support-box"/>
+  <text x="180" y="820" class="agent-text">运维工程师</text>
+  <text x="180" y="835" class="agent-text">(Ops Agent)</text>
+  <text x="180" y="870" class="step-text">部署 + 监控</text>
   
   <!-- 用户反馈分析师 -->
-  <rect x="280" y="700" width="120" height="50" class="support-box"/>
-  <text x="340" y="720" class="agent-text">反馈分析师</text>
-  <text x="340" y="735" class="agent-text">(Feedback Agent)</text>
-  <text x="340" y="770" class="step-text">用户反馈报告</text>
+  <rect x="280" y="800" width="120" height="50" class="support-box"/>
+  <text x="340" y="820" class="agent-text">反馈分析师</text>
+  <text x="340" y="835" class="agent-text">(Feedback Agent)</text>
+  <text x="340" y="870" class="step-text">用户反馈报告</text>
   
   <!-- 流程箭头 -->
   <!-- 导演到产品经理 -->
@@ -122,20 +129,37 @@
   <line x1="340" y1="350" x2="610" y2="440" class="flow-arrow"/>
   
   <!-- 客户端到测试 -->
-  <line x1="130" y1="490" x2="240" y2="560" class="flow-arrow"/>
-  <line x1="250" y1="490" x2="250" y2="560" class="flow-arrow"/>
-  <line x1="370" y1="490" x2="270" y2="560" class="flow-arrow"/>
-  <line x1="490" y1="490" x2="280" y2="560" class="flow-arrow"/>
-  <line x1="610" y1="490" x2="290" y2="560" class="flow-arrow"/>
+  <line x1="130" y1="490" x2="180" y2="660" class="flow-arrow"/>
+  <line x1="250" y1="490" x2="180" y2="660" class="flow-arrow"/>
+  <line x1="370" y1="490" x2="180" y2="660" class="flow-arrow"/>
+  <line x1="490" y1="490" x2="180" y2="660" class="flow-arrow"/>
+  <line x1="610" y1="490" x2="180" y2="660" class="flow-arrow"/>
+
+  <!-- 测试到Debug -->
+  <path d="M 240 685 C 280 675, 280 675, 320 685" class="flow-arrow"/>
+  <text x="280" y="670" class="step-text">发现复杂Bug</text>
   
+  <!-- Debug到测试 (回归测试) -->
+  <path d="M 320 705 C 280 715, 280 715, 240 705" stroke="#1f2937" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="260" y="725" class="step-text">修复后回归</text>
+  
+  <!-- 总线模式：测试到开发（简单Bug修复） -->
+  <line x1="80" y1="520" x2="660" y2="520" stroke-dasharray="5,5" stroke="#1f2937" stroke-width="2"/>
+  <path d="M 120 680 q -20 -40, 0 -150" stroke="#1f2937" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="20" y="590" class="step-text">简单Bug修复(导演分诊)</text>
+
   <!-- 测试到运维 -->
-  <line x1="240" y1="610" x2="180" y2="700" class="flow-arrow"/>
+  <line x1="180" y1="710" x2="180" y2="800" class="flow-arrow"/>
+  <text x="190" y="760" class="step-text">测试通过</text>
+  
+  <!-- Debug到运维 -->
+  <line x1="340" y1="710" x2="240" y2="800" class="flow-arrow"/>
   
   <!-- 运维到反馈分析 -->
-  <line x1="240" y1="725" x2="280" y2="725" class="flow-arrow"/>
+  <line x1="240" y1="825" x2="280" y2="825" class="flow-arrow"/>
   
   <!-- 反馈分析回到产品经理（迭代循环） -->
-  <path d="M 340 700 Q 450 650 450 185 Q 450 175 320 185" class="flow-arrow" stroke-dasharray="5,5"/>
+  <path d="M 340 800 Q 450 750 450 185 Q 450 175 320 185" stroke="#1f2937" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
   
   <!-- 图例 -->
   <text x="800" y="140" class="phase-text">图例</text>
@@ -147,10 +171,12 @@
   <text x="830" y="212" class="step-text">客户端Agent</text>
   <rect x="800" y="220" width="20" height="15" class="support-box"/>
   <text x="830" y="232" class="step-text">支持服务Agent</text>
-  <line x1="800" y1="250" x2="820" y2="250" class="flow-arrow"/>
-  <text x="830" y="255" class="step-text">工作流向</text>
-  <line x1="800" y1="270" x2="820" y2="270" class="flow-arrow" stroke-dasharray="5,5"/>
-  <text x="830" y="275" class="step-text">迭代反馈</text>
+  <!-- 实线箭头 -->
+  <line x1="800" y1="250" x2="840" y2="250" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="850" y="255" class="step-text">工作流向</text>
+  <!-- 虚线箭头 -->
+  <line x1="800" y1="270" x2="840" y2="270" stroke="#1f2937" stroke-width="2" fill="none" stroke-dasharray="4,4" marker-end="url(#arrowhead)"/>
+  <text x="850" y="275" class="step-text">迭代/修复反馈</text>
   
   <!-- 关键特性说明 -->
   <text x="800" y="320" class="phase-text">关键特性</text>
@@ -160,4 +186,4 @@
   <text x="800" y="385" class="step-text">• 质量保证：测试驱动</text>
   <text x="800" y="400" class="step-text">• 持续迭代：反馈循环</text>
   
-</svg>
+</svg> 
