@@ -17,7 +17,7 @@
 > **核心提议：**
 > 看了这个工作流，感觉可以在dev plan后加入一个hld阶段，用uiux agent完善高层界面设计...把可视化结果展现在hld阶段，正式开始前。因为这步需要大量人工交互确认，协作软件多。然后进入自动化较高的实现阶段就更轻松了。@William Cu* 请问William如何看待这个vibe coding流程，有什么建议吗？
 
----
+![产品研发工作流](https://article-images.zsxq.com/FuAA9B4tY1KNXRmjkdhttSGtPNEV)
 
 ### **我的回应与思考：英雄所见略同，甚至更胜一筹**
 
