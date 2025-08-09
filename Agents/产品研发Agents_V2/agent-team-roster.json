@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.1",
+  "team_name": "全栈产品研发Agent团队",
+  "description": "一个由人类导演手动编排，能够覆盖从需求、设计、多端开发、测试到运维全流程的AI Agent团队。团队成员的上下文感知与传递由其各自的Prompt定义，导演负责在恰当时机@调用相应角色以驱动项目前进。",
+  "roles": [
+    {
+      "role_id": "pm_agent",
+      "name": "产品经理Agent",
+      "description": "负责将模糊想法转化为清晰、可执行的PRD、用户故事和产品路线图。",
+      "prompt_file": "agent_prompts/PM_Agent_Prompt.md",
+      "tools_required": ["internal_search", "document_generator"],
+      "primary_output": "prd.md"
+    },
+    {
+      "role_id": "uiux_designer_agent",
+      "name": "UI/UX设计师Agent",
+      "description": "根据PRD文档，设计高保真UI稿和交互原型。",
+      "prompt_file": "agent_prompts/UIUX_Designer_Agent_Prompt.md",
+      "tools_required": ["html_css_js_generator", "image_generator"],
+      "primary_output": "interactive_prototype/"
+    },
+    {
+      "role_id": "backend_engineer_agent",
+      "name": "后端工程师Agent",
+      "description": "根据PRD和设计，负责数据库设计、API开发和服务器端逻辑实现。",
+      "prompt_file": "agent_prompts/Backend_Engineer_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "database_client"],
+      "primary_output": "backend_source_code/"
+    },
+    {
+      "role_id": "web_client_agent",
+      "name": "Web前端工程师Agent",
+      "description": "负责实现Web端的用户界面和业务逻辑。",
+      "prompt_file": "agent_prompts/Web_Client_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "browser_preview"],
+      "primary_output": "web_client_source_code/"
+    },
+    {
+      "role_id": "mobile_client_flutter_agent",
+      "name": "移动端工程师Agent (Flutter)",
+      "description": "使用Flutter框架开发跨平台的iOS和Android应用。",
+      "prompt_file": "agent_prompts/Mobile_Client_Flutter_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "flutter_sdk", "mobile_simulator"],
+      "primary_output": "mobile_flutter_source_code/"
+    },
+    {
+      "role_id": "mini_program_taro_agent",
+      "name": "小程序工程师Agent (Taro)",
+      "description": "使用Taro框架开发多平台小程序。",
+      "prompt_file": "agent_prompts/Mini_Program_Taro_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "taro_cli"],
+      "primary_output": "mini_program_source_code/"
+    },
+    {
+      "role_id": "desktop_client_electron_agent",
+      "name": "桌面客户端工程师Agent (Electron)",
+      "description": "使用Electron框架开发跨平台的桌面应用。",
+      "prompt_file": "agent_prompts/Desktop_Client_Electron_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "electron_builder"],
+      "primary_output": "desktop_source_code/"
+    },
+    {
+      "role_id": "browser_plugin_agent",
+      "name": "浏览器插件工程师Agent",
+      "description": "负责开发浏览器扩展程序。",
+      "prompt_file": "agent_prompts/Browser_Plugin_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "webextensions_api"],
+      "primary_output": "browser_plugin_source_code/"
+    },
+    {
+      "role_id": "tester_agent",
+      "name": "测试工程师Agent",
+      "description": "负责编写测试用例、执行自动化测试并输出测试报告。",
+      "prompt_file": "agent_prompts/Tester_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "test_frameworks"],
+      "primary_output": "test_report.md"
+    },
+    {
+      "role_id": "debug_agent",
+      "name": "调试工程师Agent",
+      "description": "专注于分析和修复代码中的具体Bug。",
+      "prompt_file": "agent_prompts/Debug_Agent_Prompt.md",
+      "tools_required": ["code_interpreter", "debugger"],
+      "primary_output": "bug_fix_patch.diff"
+    },
+    {
+      "role_id": "operations_agent",
+      "name": "运维工程师Agent",
+      "description": "负责应用的部署、监控和自动化运维。",
+      "prompt_file": "agent_prompts/Operations_Agent_Prompt.md",
+      "tools_required": ["docker", "kubernetes_cli", "bash"],
+      "primary_output": "deployment_scripts/"
+    },
+    {
+      "role_id": "feedback_analyzer_agent",
+      "name": "用户反馈分析师Agent",
+      "description": "负责收集、整理和分析用户反馈，为产品迭代提供数据支持。",
+      "prompt_file": "agent_prompts/Feedback_Analyzer_Agent_Prompt.md",
+      "tools_required": ["data_analysis_libs", "sentiment_analysis_api"],
+      "primary_output": "feedback_analysis_report.md"
+    }
+  ],
+  "suggested_playbook": [
+    "1. **需求阶段**: 导演向 `pm_agent` 提出初始想法，获取PRD等核心文档。",
+    "2. **设计阶段**: 导演将PRD作为上下文，@ `uiux_designer_agent` 进行原型设计。",
+    "3. **开发阶段**: 导演根据目标平台，将设计稿和PRD作为上下文，@ 相应的开发Agent(s) (如 `backend_engineer_agent`, `mobile_client_flutter_agent` 等) 并行或串行地进行开发。",
+    "4. **测试阶段**: 导演将代码库和需求文档作为上下文，@ `tester_agent` 编写和执行测试，然后 @ `debug_agent` 修复发现的Bug。",
+    "5. **部署阶段**: 导演 @ `operations_agent` 进行项目部署。",
+    "6. **迭代阶段**: 导演 @ `feedback_analyzer_agent` 分析上线后的用户反馈，并将分析报告作为输入，开启新一轮的需求迭代。"
+  ]
+} 
