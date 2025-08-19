@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {【这里粘贴您的机场节点】}
-  - {name: 静态住宅代理, server:【主机】, port:【端口】, type: socks5, username:【用户名】, password:【密码】, dialer-proxy: 魔法}
+  - {name: 住宅代理, server:【主机】, port:【端口】, type: socks5, username:【用户名】, password:【密码】, dialer-proxy: 魔法}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,11 +17,11 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
       - 魔法
-      - 静态住宅代理
+      - 住宅代理
   - name: 🤖 AI 服务
     type: select
     proxies:
-      - 静态住宅代理
+      - 住宅代理
       - 魔法
       - DIRECT
   - name: ♻️ 自动选择
@@ -67,7 +67,7 @@ proxy-groups:
 rules:
   # ==========================================================
   # 综合AI服务代理规则 (Comprehensive AI Services Rules)
-  # 更新时间 (Last Updated): 2025-08-11
+  # 更新时间 (Last Updated): 2025-08-18
   # ==========================================================
 
   # ----------------------------------------------------------
@@ -81,7 +81,18 @@ rules:
   - DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI 服务
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 AI 服务 # OpenAI API 相关
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 AI 服务 # ChatGPT 使用的验证码服务
-  - DOMAIN-SUFFIX,browser-intake-datadoghg.com,🤖 AI 服务
+
+  # ----------------------------------------------------------
+  # # Google (Gemini & Bard)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI 服务 # Gemini 主要服务域名
+  - DOMAIN-SUFFIX,bard.google.com,🤖 AI 服务 # Bard (已整合入Gemini)
+  - DOMAIN-SUFFIX,ai.google.dev,🤖 AI 服务 # Google AI开发者
+  - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI 服务 # AI Studio
+  - DOMAIN-SUFFIX,generativeai.googleapis.com,🤖 AI 服务 # Gemini API
+  - DOMAIN-SUFFIX,googleapis.com,🤖 AI 服务 # Google云服务和API，许多AI服务依赖
+  - DOMAIN-SUFFIX,googleusercontent.com,🤖 AI 服务 # Google用户内容，如图片上传
+  - DOMAIN-SUFFIX,gstatic.com,🤖 AI 服务 # Google静态资源
 
   # ----------------------------------------------------------
   # # Anthropic (Claude)
@@ -90,17 +101,57 @@ rules:
   - DOMAIN-SUFFIX,anthropic.com,🤖 AI 服务
 
   # ----------------------------------------------------------
+  # # Microsoft (Copilot / Azure OpenAI)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,copilot.microsoft.com,🤖 AI 服务 # Microsoft Copilot
+  - DOMAIN-SUFFIX,bing.com,🤖 AI 服务 # Copilot 强依赖 Bing
+  - DOMAIN-SUFFIX,edgeservices.bing.com,🤖 AI 服务
+  - DOMAIN-SUFFIX,sydney.bing.com,🤖 AI 服务 # Copilot 后端服务
+  - DOMAIN-SUFFIX,api.msn.com,🤖 AI 服务
+  - DOMAIN-SUFFIX,assets.msn.com,🤖 AI 服务
+
+  # ----------------------------------------------------------
+  # # Perplexity AI
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,perplexity.ai,🤖 AI 服务
+  - DOMAIN-SUFFIX,pplx.ai,🤖 AI 服务
+
+  # ----------------------------------------------------------
+  # # Poe (by Quora)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,poe.com,🤖 AI 服务
+  - DOMAIN-SUFFIX,quora.com,🤖 AI 服务 # Poe 依赖 Quora 账户体系
+  - DOMAIN-SUFFIX,quora-static.net,🤖 AI 服务
+
+  # ----------------------------------------------------------
+  # # Midjourney (图像生成)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,midjourney.com,🤖 AI 服务
+  - DOMAIN-SUFFIX,cdn.midjourney.com,🤖 AI 服务
+
+  # ----------------------------------------------------------
+  # # Hugging Face (AI社区和平台)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,huggingface.co,🤖 AI 服务
+  - DOMAIN-SUFFIX,hf.co,🤖 AI 服务 # Hugging Face 短域名
+
+  # ----------------------------------------------------------
+  # # 其他AI相关服务 (Others)
+  # ----------------------------------------------------------
+  - DOMAIN-SUFFIX,elevenlabs.io,🤖 AI 服务 # AI语音合成
+  - DOMAIN-SUFFIX,runwayml.com,🤖 AI 服务 # AI视频编辑和生成
+
+  # ----------------------------------------------------------
   # # 通用依赖服务 (Common Dependencies)
   # ----------------------------------------------------------
   - DOMAIN-SUFFIX,auth0.com,🤖 AI 服务 # 多平台使用的身份验证服务
   - DOMAIN-SUFFIX,sentry.io,🤖 AI 服务 # 错误追踪服务
   - DOMAIN-SUFFIX,stripe.com,🤖 AI 服务 # 支付服务
-  - DOMAIN-SUFFIX,intercom.io,🤖 AI 服务
   - DOMAIN-SUFFIX,intercom.com,🤖 AI 服务 # 客户支持服务
   - DOMAIN-SUFFIX,intercomcdn.com,🤖 AI 服务
   - DOMAIN-SUFFIX,identrust.com,🤖 AI 服务 # 数字证书服务
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 AI 服务 # Cloudflare验证
-  - DOMAIN-SUFFIX,github.com,🤖 AI 服务 # github服务
+  - DOMAIN-SUFFIX,github.com,🤖 AI 服务 # github相关
   
   # Local Area Network
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
